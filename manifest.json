@@ -16,18 +16,8 @@
 		"scripts" : ["js/background.js"],
 		"persistent" : false
 	},
-	"version" : "1.0",
+	"version" : "1.01",
 	"manifest_version" : 2,
-	"commands" : {
-		"_execute_browser_action" : {
-			"suggested_key" : {
-				"default" : "Ctrl+Shift+C",
-				"windows" : "Ctrl+Shift+C",
-				"mac" : "Command+Shift+C",
-				"linux" : "Ctrl+Shift+C"
-			}
-		}
-	},
 	"permissions" : ["tabs", "http://*/*", "https://*/*", "clipboardWrite"],
 	"offline_enabled" : true
 }
