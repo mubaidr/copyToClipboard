@@ -1,0 +1,33 @@
+{
+	"name" : "Copy URL to Clipboard",
+	"description" : "Copy current page URL to clipboard.",
+	"icons" : {
+		"128" : "img/icon_128.png"
+	},
+	"developer" : {
+		"name" : "mubaidr",
+		"url" : "https://github.com/mubaidr"
+	},
+	"page_action" : {
+		"default_title" : "Copy URL",
+		"default_icon" : "img/clone.png"
+	},
+	"background" : {
+		"scripts" : ["js/background.js"],
+		"persistent" : false
+	},
+	"version" : "1.0",
+	"manifest_version" : 2,
+	"commands" : {
+		"_execute_browser_action" : {
+			"suggested_key" : {
+				"default" : "Ctrl+Shift+C",
+				"windows" : "Ctrl+Shift+C",
+				"mac" : "Command+Shift+C",
+				"linux" : "Ctrl+Shift+C"
+			}
+		}
+	},
+	"permissions" : ["tabs", "http://*/*", "https://*/*", "clipboardWrite"],
+	"offline_enabled" : true
+}
